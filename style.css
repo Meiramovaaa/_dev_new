@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.kpi-aside-list-dropdown-wrapper{
+    padding: 0;
+}
+ul{
+    display: flex;
+    list-style-type:none;
+}
+.goal-window-inner{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+}
+.tmp-container-block-center{
+    width: 50%;
+    margin: 0 auto;
+}
+.kpi-dropdown-wrapper,
+.kpi-aside-list-dropdown-wrapper{
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+.kpi-list-wrapper,
+.kpi-aside-list-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.kpi-list-wrapper.active .kpi-dropdown-wrapper{
+    height: fit-content;
+    overflow: visible;
+    padding-left:  26px;
+    padding-bottom: 15px;
+    border-left: 1px solid #EBEDED;
+    border-bottom: 1px solid #EBEDED;
+}
+.kpi-list-wrapper.active .kpi-aside-list-dropdown-wrapper{
+    height: fit-content;
+    overflow: visible;
+    padding-left: 35px;
+}
+.kpi-block-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.kpi-block-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    border: 1px solid #EBEDED;
+    border-radius: 10px;
+}
+
+.kpi-block-list-active-header{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color:  #1E2124;
+}
+
+.kpi-icon-wrapper{
+    padding: 6px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.kpi-icon-wrapper-grey{
+    background-color: #EBEDED;
+}
+.kpi-icon-wrapper-yellow{
+    background-color: #FFD644;
+}
+.kpi-icon-wrapper-red{
+    background-color: #D3300F;
+    color: #fff;
+}
+
+.kpi-block-list-item-part,
+.kpi-dropdown-list-item,
+.goal-window-list-item,
+.kpi-aside-list-dropdown-item,
+.kpi-aside-list-dropdown-desc,
+.kpi-aside-list-chosen{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}   
+.kpi-block-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kpi-border-bottom{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EBEDED;
+}
+.kpi-dropdown-list,
+.goal-window-list{
+    flex-direction: column;
+    gap: 15px;
+}
+.kpi-block-item-period{
+    color: #1E2124;
+    border-bottom: 1px solid #1E2124;
+    cursor: pointer;
+}
+.kpi-block-item-type{
+    font-family: 'Open Sans';
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    gap: 5px;
+    color: #fff;
+    width: fit-content;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+.kpi-type-green{
+    background-color: #5EB877;
+}
+.kpi-type-blue{
+    background-color: #37C5E0;
+}
+.kpi-type-darkblue{
+    background-color: #37A3F5;
+}
+
+
+.goal-window-header{
+    background-color: #375B84;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #fff;
+    position: relative;
+}
+.goal-window-header-desc{
+    font-size: 11px;
+    font-family: 'Inter';   
+    letter-spacing: 1px;
+}
+.goal-window-header-title{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+}
+.goal-window-inner-wrapper{
+    padding: 15px 24px 32px;
+}
+.kpi-aside-list-dropdown-item img{
+    width: 24px;
+}
+.kpi-aside-list-choose{
+    display: block;
+    font-style: italic;
+    color: #37A3F5;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.kpi-aside-list-input,
+.kpi-aside-list-chosen,
+.kpi-aside-list-dropdown-title.active .kpi-aside-list-choose{
+    display: none;
+}
+.kpi-aside-list-dropdown-title.active .kpi-aside-list-input{
+    display: flex;
+}
+.kpi-owner-name{
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+    padding: 0;
+}
